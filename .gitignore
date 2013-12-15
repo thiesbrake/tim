@@ -13,3 +13,6 @@ wp-content/backups/
 sitemap.xml.gz
 *.DS_Store
 *Thumbs.DB
+node_modules
+.npm-debug.log
+tmp
