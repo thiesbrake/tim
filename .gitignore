@@ -13,6 +13,6 @@ wp-content/backups/
 sitemap.xml.gz
 *.DS_Store
 *Thumbs.DB
-wp-content/themes/timstaudt/assets/node_modules
-wp-content/themes/timstaudt/assets/.npm-debug.log
-wp-content/themes/timstaudt/assets/tmp
+node_modules
+.npm-debug.log
+tmp
