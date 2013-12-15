@@ -76,7 +76,7 @@ add_action( 'widgets_init', 'timstaudt_widgets_init' );
  * Enqueue scripts and styles.
  */
 function timstaudt_scripts() {
-	wp_enqueue_style( 'timstaudt-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'timstaudt-style', get_template_directory_uri() . '/assets/build/style.css' );
 
 	wp_enqueue_script( 'timstaudt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
