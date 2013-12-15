@@ -75,6 +75,14 @@ add_action( 'widgets_init', 'timstaudt_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+function google_font_style(){ 
+    wp_register_style( 'GoogleFonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700'); 
+    wp_enqueue_style( 'GoogleFonts' );
+}
+
+add_action('init', 'google_font_style'); 
+
 function timstaudt_scripts() {
 	wp_enqueue_style( 'timstaudt-style', get_template_directory_uri() . '/assets/build/style.css' );
 
