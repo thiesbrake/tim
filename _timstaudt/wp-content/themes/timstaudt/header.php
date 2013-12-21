@@ -19,18 +19,27 @@
 </head>
 
 <body <?php body_class(); ?>>
+<a name="top" id="top"></a>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 
-		<div class="site-branding">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="" alt=""></a>
-		</div>
+		<div class="site-header-center">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<div class="site-branding">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_tim.png" alt="Tim Staudt"></a>
+			</div>
+
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #site-navigation -->
+
+			<div class="clearfix"></div>
+
+		</div>
 		
 	</header><!-- #masthead -->
+
+	
 
 	<div id="content" class="site-content">

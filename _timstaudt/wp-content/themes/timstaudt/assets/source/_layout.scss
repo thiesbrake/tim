@@ -1,0 +1,319 @@
+/*------------------------------------*\
+    $Basic-Imports (Partials)
+\*------------------------------------*/
+
+// Import Compass Library
+@import "compass/css3";
+
+// Variables: Colors
+@import "partials/colors";
+
+// Variables: Typography
+@import "partials/typography";
+
+// Mixins
+@import "partials/mixins";
+
+
+/*------------------------------------*\
+    $Clearfix
+\*------------------------------------*/
+
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/*
+BASE       HTML, BODY, etc.
+*/
+
+
+/*------------------------------------*\
+    $Base
+\*------------------------------------*/
+
+*{
+	@include box-sizing(border-box);
+}
+
+
+body{
+	font-family: $Raleway;
+	font-size: 16px;
+	background: $white;
+	color: $black;
+}
+
+.container{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+// Back-to-Top Anchor
+a#top{
+	position: absolute;
+	top: -9999px;
+}
+
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+// 1. Wrapper 					==============================
+
+.site-header{
+	position: relative;
+	z-index: 1000;
+	padding: 0px 30px;
+	background: none;
+}
+
+.site-header-center{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+// 2. Branding 					==============================
+
+.site-branding{
+	padding-top: 15px;
+	float: left;
+}
+
+// 3. Navigation 				==============================
+
+.main-navigation{
+	float: right;
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			float: left;
+			list-style-type: none;
+
+			a{	
+				font-size: 1.125em;
+				font-weight: 400;
+				@include transition(all 0.2s ease-in-out);
+				display: block;
+				padding: 20px 12px;
+				border-top: 4px solid rgba(0,0,0,0);
+				text-decoration: none;
+				color: $white;
+
+				&:hover{
+					border-top: 4px solid $lightgreen;
+					color: $lightgreen;
+					text-decoration: none;
+				}
+			}
+		}
+
+		li.current_page_item{
+
+			a{
+				border-top: 4px solid $lightgreen;
+				color: $lightgreen;
+
+				&:hover{
+					border-top: 4px solid $lightgreen;
+					color: $lightgreen;	
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------*\
+    $VISUALS
+\*------------------------------------*/
+
+.section-visual{
+	position: relative;
+	z-index: 500;
+	width: 100%;
+	height: 500px;
+	background: $headerbg;
+	margin-top: -70px;
+}
+
+/*------------------------------------*\
+    $QUOTE
+\*------------------------------------*/
+
+
+.quote{
+	font-size: 1.450em;
+	line-height: 1.379em;
+	color: $darkgreen;
+	padding: 10px;
+	text-align: center;
+	background: url(../img/dropshadow.png) bottom center no-repeat;
+
+	p{
+		margin-top: 20px;
+	}
+}
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+
+.content-area{
+
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+.site-footer{
+	margin-top: 100px;
+}
+
+// 1. Colophon 					==============================
+
+.colophon{}
+
+.colophon .ico{
+	position: relative;
+	z-index: 150;
+	width: 80px;
+	height: 40px;
+	margin: 0 auto;
+	background: $white url(../img/note.png) center center no-repeat;
+}
+
+.colophon .hr{
+	position: relative;
+	z-index: 50;
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin-top: -18px;
+	margin-bottom: 18px;
+
+	background: #ffffff;
+	background: -moz-linear-gradient(left,  #ffffff 8%, #ebebeb 23%, #ebebeb 74%, #ffffff 92%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(8%,#ffffff), color-stop(23%,#ebebeb), color-stop(74%,#ebebeb), color-stop(92%,#ffffff));
+	background: -webkit-linear-gradient(left,  #ffffff 8%,#ebebeb 23%,#ebebeb 74%,#ffffff 92%);
+	background: -o-linear-gradient(left,  #ffffff 8%,#ebebeb 23%,#ebebeb 74%,#ffffff 92%);
+	background: -ms-linear-gradient(left,  #ffffff 8%,#ebebeb 23%,#ebebeb 74%,#ffffff 92%);
+	background: linear-gradient(to right,  #ffffff 8%,#ebebeb 23%,#ebebeb 74%,#ffffff 92%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+
+// 2. Back-to-top 				==============================
+
+.back-to-top{
+	text-align: right;
+	a{
+		display: block;
+		margin: 20px 0px;
+
+		&:after{
+			content: "";
+			width: 11px;
+			height: 16px;
+			margin-left: 11px;
+			display: inline-block;
+			background: url(../img/arrow_up.png) center center no-repeat;
+		}
+	}
+}
+
+
+// 3 Footer-Info 				==============================
+
+.footer-content{
+	padding: 25px;
+	background: $darkgreen;
+	color: $white;
+	text-align: center;
+	border-bottom: 25px solid $brown;
+	
+	p, a{
+		color: $white;
+	}
+
+	a{
+		font-size: 1em;
+	}
+}
+
+
+// 3.1 Socials 					==============================
+
+.social{
+	text-align: center;
+
+	a{
+		display: inline-block;
+		margin-right: 35px;
+
+	}
+	a.twitter{
+	    background: url('../img/social-sprite.png') no-repeat 0 -3px;
+		width: 29px;
+		height: 29px;
+	}
+	a.facebook{
+	    background: url('../img/social-sprite.png') no-repeat -30px 0;
+		width: 29px;
+		height: 29px;
+	}
+	a.soundcloud{
+	    background: url('../img/social-sprite.png') no-repeat -61px -0px;
+		width: 29px;
+		height: 29px;
+	}
+	a.youtube{
+	    background: url('../img/social-sprite.png') no-repeat -91px 0;
+		width: 25px;
+		height: 29px;
+	}
+}
+
+
+// 3.2 Info 					==============================
+	
+.contact-info{
+
+	span + span{
+		margin-left: 20px;
+	}
+
+	a{
+		text-decoration: underline;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	p{
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+

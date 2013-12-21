@@ -1,8 +1,12 @@
+// ==========================================================
 
-/*--------------------
-Main Stylesheet 
---------------------*/
+// Type: Main-Stylesheet
+// Role: Importing all Elements
 
+// ==========================================================
+
+
+// 1. LIBS 					==============================
 
 // Import Reset/Normalize
 @import "lib/normalize";
@@ -10,19 +14,22 @@ Main Stylesheet
 // Import Basic Grid
 @import "lib/grid";
 
-// Base Layout Styles
-@import "base";
 
-// Media Queries
+
+// 2. LAYOUT 				==============================
+
+// Base Layout Styles
+@import "layout";
+
+
+
+// 3. MEDIA-QUERIES 		==============================
 
 // 480px
 @media only screen and (min-width: 480px) {}
 
 // 2x
-
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-	
-}
+only screen and (min-device-pixel-ratio: 1.5) {}
