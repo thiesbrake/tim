@@ -220,7 +220,7 @@ a#top{
 .back-to-top{
 	text-align: right;
 	a{
-		display: block;
+		display: inline-block;
 		margin: 20px 0px;
 
 		&:after{
@@ -308,12 +308,52 @@ a#top{
 	}
 }
 
+/*------------------------------------*\
+    $SIDR
+\*------------------------------------*/
 
 
+#mobile-header {
+    display: none;
+    
+}
 
+a#responsive-menu-button{
+	position: absolute;
+    text-indent: -9999px;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/menu.png) center center no-repeat;
+}
 
+.left-content-wrapper{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
 
+.left-content{
+	top: 150px;
+	z-index: 9999;
+	position: absolute;
+	width: 55%;
+	height: 400px;
 
+	p{
+		color: $white;
+		font-weight: 300;
+		font-size: 4.250em;
+		line-height: 1.029em;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	a{
+		font-size: 24px;
+	}
+}
 
 
 

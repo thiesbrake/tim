@@ -8,9 +8,27 @@
  */
 
 get_header(); ?>
-
 		<div class="section-visual start-visual">
-			
+			<?php if (have_posts()) : while (have_posts()) : the_post();?>
+
+			<div class="left-content-wrapper container">
+
+
+				<div class="left-content">
+					<?php the_content(); ?>
+					<div class="social">
+					<a href="" class="twitter"></a>
+					<a href="" class="facebook"></a>
+					<a href="" class="soundcloud"></a>
+					<a href="" class="youtube"></a>
+					</div>
+				</div>
+
+			</div>
+
+
+			<?php endwhile; endif; ?>
+
 
 		</div>
 

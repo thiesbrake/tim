@@ -86,6 +86,12 @@ add_action('init', 'google_font_style');
 function timstaudt_scripts() {
 	wp_enqueue_style( 'timstaudt-style', get_template_directory_uri() . '/assets/build/style.css' );
 
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '1.0.0', true );
+
+	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/jquery.sidr.min.js', array(), '1.0.0', true );
+
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', array(), '1.0.0', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
