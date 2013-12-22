@@ -11,9 +11,9 @@ get_header(); ?>
 		<div class="section-visual start-visual">
 			<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
-			<div class="left-content-wrapper container">
-
-
+			<div class="visual">
+				<?php the_post_thumbnail() ?>
+				<div class="left-content-wrapper container">
 				<div class="left-content">
 					<?php the_content(); ?>
 					<div class="social">
@@ -23,9 +23,8 @@ get_header(); ?>
 					<a href="" class="youtube"></a>
 					</div>
 				</div>
-
+				</div>
 			</div>
-
 
 			<?php endwhile; endif; ?>
 
@@ -33,8 +32,8 @@ get_header(); ?>
 		</div>
 
 		<div class="quote start-quote container">
-			
-			<p><b>Musiker</b> zu sein bedeutet hart an seinen Zielen zu arbeiten - <b>erfolgreicher Musiker</b> zu sein bedeutet hart und zuverlässig zu arbeiten.</p>
+
+			<p><?php the_field( "manifesto" ); ?></p>
 
 		</div>
 
@@ -42,7 +41,7 @@ get_header(); ?>
 
 			<div class="row">
 
-				<div class="large-6 columns">
+				<div class="small-12 medium-6 columns">
 					<h2>Unterricht</h2>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/teaser-left.jpg" alt="Teaser-Left">
 					<p>Für mich gibt es nichts tolleres, als mein Wissen an andere die Spaß am Gitarre spielen haben weiterzugeben. Der Schüler soll selbst entscheiden, wo er hin will. Ich stehe ihm auf diesem Weg mit Rat und Tat als Coach zur Seite.</p>
@@ -51,7 +50,7 @@ get_header(); ?>
 				</div>
 
 
-  				<div class="large-6 columns">
+  				<div class="small-12 medium-6 columns">
 					<h2>Unterricht</h2>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/teaser-right.jpg" alt="Teaser-Right">
 					<p>Für mich gibt es nichts tolleres, als mein Wissen an andere die Spaß am Gitarre spielen haben weiterzugeben. Der Schüler soll selbst entscheiden, wo er hin will. Ich stehe ihm auf diesem Weg mit Rat und Tat als Coach zur Seite.</p>
