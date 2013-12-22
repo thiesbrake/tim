@@ -28,10 +28,16 @@
 
 // 3. MEDIA-QUERIES 		==============================
 
-// 480px
+// 830px
+@media only screen and (max-width: 830px) {
+@import "830";
+}
+
+// 768px
 @media only screen and (max-width: 768px) {
 @import "768";
 }
+
 
 // 2x
 @media

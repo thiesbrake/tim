@@ -90,6 +90,8 @@ function timstaudt_scripts() {
 
 	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/jquery.sidr.min.js', array(), '1.0.0', true );
 
+	wp_enqueue_script( 'fittext', get_template_directory_uri() . '/assets/js/jquery.fittext.js', array(), '1.0.0', true );
+
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', array(), '1.0.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

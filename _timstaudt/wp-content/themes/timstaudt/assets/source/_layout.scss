@@ -73,7 +73,7 @@ a#top{
 .site-header{
 	position: relative;
 	z-index: 1000;
-	padding: 0px 30px;
+	padding: 0px 0px;
 	background: none;
 }
 
@@ -144,7 +144,7 @@ a#top{
 	position: relative;
 	z-index: 500;
 	width: 100%;
-	height: 670px;
+	height: auto;
 	background: $headerbg;
 	margin-top: -70px;
 }
@@ -268,6 +268,9 @@ a#top{
 		display: inline-block;
 		margin-right: 35px;
 
+		&:nth-child(4){
+			margin-right: 0;
+		}
 	}
 	a.twitter{
 	    background: url('../img/social-sprite.png') no-repeat 0 -3px;
@@ -335,12 +338,13 @@ a#responsive-menu-button{
     background: url(../img/menu.png) center center no-repeat;
 }
 
+
 /*------------------------------------*\
     $HEADER VISUAL
 \*------------------------------------*/
 
 .left-content-wrapper{
-	height: 670px;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -349,12 +353,13 @@ a#responsive-menu-button{
 	z-index: 9999;
 	position: absolute;
 	width: 50%;
+	margin-right: 50%;
 	height: 400px;
 
 	p{
 		color: $white;
 		font-weight: 300;
-		font-size: 4.250em;
+		font-size: 1em;
 		line-height: 1.029em;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -378,12 +383,14 @@ a#responsive-menu-button{
 
 .visual{
 	width: 100%;
-	margin: 0 auto;
-	height: 670px;
+	float: right;
+	height: auto;
 	overflow: hidden;
 
 	img{
-		width: 1672px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
 		margin: 0 auto;
 	}
 }

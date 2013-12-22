@@ -15,7 +15,7 @@ get_header(); ?>
 				<?php the_post_thumbnail() ?>
 				<div class="left-content-wrapper container">
 				<div class="left-content">
-					<?php the_content(); ?>
+					<?php the_field( "nav-field" ); ?>
 					<div class="social">
 					<a href="" class="twitter"></a>
 					<a href="" class="facebook"></a>

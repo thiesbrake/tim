@@ -5,4 +5,6 @@ jQuery(document).ready(function ($) {
       source: '#navigation'
 	});
 
+	$('.visual').first().fitText(1.2, { minFontSize: '20px', maxFontSize: '68px' });
+
 });
