@@ -2563,13 +2563,12 @@ a#responsive-menu-button {
   z-index: 9999;
   position: absolute;
   width: 50%;
-  margin-right: 50%;
   height: 400px;
 }
 .left-content p {
   color: white;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 4.250em;
   line-height: 1.029em;
   margin-bottom: 0;
   margin-top: 0;
