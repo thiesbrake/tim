@@ -31,9 +31,11 @@ get_header(); ?>
 
 		</div>
 
+		<div class="clearfix"></div>
+
 		<div class="quote start-quote container">
 
-			<p><?php the_field( "manifesto" ); ?></p>
+			<?php the_field( "manifesto" ); ?>
 
 		</div>
 
@@ -41,20 +43,17 @@ get_header(); ?>
 
 			<div class="row">
 
-				<div class="small-12 medium-6 columns">
-					<h2>Unterricht</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/teaser-left.jpg" alt="Teaser-Left">
-					<p>Für mich gibt es nichts tolleres, als mein Wissen an andere die Spaß am Gitarre spielen haben weiterzugeben. Der Schüler soll selbst entscheiden, wo er hin will. Ich stehe ihm auf diesem Weg mit Rat und Tat als Coach zur Seite.</p>
-					<a href="#" class="btn">Unterricht nehmen</a>
-
+				<div class="small-12 medium-6 columns teaser_left">
+					<h2><?php the_field( "headline_left" ); ?></h2>
+					<img src="<?php the_field( "image_left" ); ?>">
+					<?php the_field( "content_left" ); ?>
 				</div>
 
 
-  				<div class="small-12 medium-6 columns">
-					<h2>Unterricht</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/teaser-right.jpg" alt="Teaser-Right">
-					<p>Für mich gibt es nichts tolleres, als mein Wissen an andere die Spaß am Gitarre spielen haben weiterzugeben. Der Schüler soll selbst entscheiden, wo er hin will. Ich stehe ihm auf diesem Weg mit Rat und Tat als Coach zur Seite.</p>
-					<a href="#" class="btn">Unterricht nehmen</a>
+  				<div class="small-12 medium-6 columns teaser_right">
+					<h2><?php the_field( "headline_right" ); ?></h2>
+					<img src="<?php the_field( "image_right" ); ?>">
+					<?php the_field( "content_right" ); ?>
   				</div>
 
 			</div>

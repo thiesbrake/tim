@@ -136,6 +136,7 @@ a#top{
 	}
 }
 
+
 /*------------------------------------*\
     $VISUALS
 \*------------------------------------*/
@@ -148,6 +149,7 @@ a#top{
 	background: $headerbg;
 	margin-top: -70px;
 }
+
 
 /*------------------------------------*\
     $QUOTE
@@ -163,22 +165,24 @@ a#top{
 	background: url(../img/dropshadow.png) bottom center no-repeat;
 
 	p{
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 }
+
 
 /*------------------------------------*\
     $CONTENT
 \*------------------------------------*/
 
 .content-area{
-
+	margin-top: 30px;
 }
 
 .content-area img{
 	width: 100%;
 	max-width: 100%;
 }
+
 
 /*------------------------------------*\
     $FOOTER
@@ -240,7 +244,7 @@ a#top{
 }
 
 
-// 3 Footer-Info 				==============================
+// 3. Footer-Info 				==============================
 
 .footer-content{
 	padding: 25px;
@@ -393,3 +397,25 @@ a#responsive-menu-button{
 		margin: 0 auto;
 	}
 }
+
+
+/*------------------------------------*\
+    $Teaser
+\*------------------------------------*/
+
+.teaser_left, .teaser_right{
+
+	p{
+
+		a{
+			font-size: 1.2em;
+		}
+	}
+}
+
+
+
+
+
+
+

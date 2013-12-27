@@ -2413,12 +2413,16 @@ a#top {
   background: url(../img/dropshadow.png) bottom center no-repeat;
 }
 .quote p {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /*------------------------------------*\
     $CONTENT
 \*------------------------------------*/
+.content-area {
+  margin-top: 30px;
+}
+
 .content-area img {
   width: 100%;
   max-width: 100%;
@@ -2597,6 +2601,13 @@ a#responsive-menu-button {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+/*------------------------------------*\
+    $Teaser
+\*------------------------------------*/
+.teaser_left p a, .teaser_right p a {
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 830px) {
