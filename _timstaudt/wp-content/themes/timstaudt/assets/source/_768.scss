@@ -10,3 +10,26 @@
 .main-navigation{
 	display: none;
 }
+
+.left-content{
+	width: 100%;
+	padding: 0px 10px;
+	text-align: center;
+
+	.social{
+		text-align: center;
+	}
+}
+
+.img-wrapper{
+
+	height: 420px;
+
+	img{
+		display: none;
+	}
+}
+
+.content-text{
+	padding: 0px 20px;
+}

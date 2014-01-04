@@ -22,15 +22,18 @@
 		</div>
 
 		<div class="footer-content ">
+
+			<!--
 			<div class="social container">
 				<a href="" class="twitter"></a>
 				<a href="" class="facebook"></a>
 				<a href="" class="soundcloud"></a>
 				<a href="" class="youtube"></a>
 			</div>
+			-->
 
 			<div class="contact-info container">
-				<p><span>E-Mail: <a href="mailto:timstaudt@gmail.com">timstaudt@gmail.com</a></span>    <span>Telefon: +49151 2334 7765</span>   <span><a href="">Impressum</a></span></p>
+				<p><a href="https://twitter.com/Tim_Staudt" target="_blank" class="twitter"></a><a href="" class="facebook"></a><span>E-Mail: <a href="mailto:info@timstaudt.de">info@timstaudt.de</a></span>    <span>Telefon: +49151 61486782</span>   <span><a href="http://localhost/tim/_timstaudt/?p=76">Impressum</a></span></p>
 			</div>
 		</div>
 

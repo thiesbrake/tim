@@ -17,6 +17,9 @@
 // Import Basic Grid
 @import "lib/sidr-light";
 
+// Import Animations
+@import "lib/animate";
+
 
 
 // 2. LAYOUT 				==============================
@@ -28,8 +31,18 @@
 
 // 3. MEDIA-QUERIES 		==============================
 
+// 1256px
+@media only screen and (max-width: 1256px) {
+@import "1256";
+}
+
+// 1080px
+@media only screen and (max-width: 1080px) {
+@import "1080";
+}
+
 // 830px
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 875px) {
 @import "830";
 }
 

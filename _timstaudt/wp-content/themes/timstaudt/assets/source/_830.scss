@@ -8,3 +8,25 @@
 		}
 	}
 }
+
+.left-content{
+	top: 100px;
+	width: 455px;
+
+	a{
+		font-size: 18px;
+		line-height: 12px;
+	}
+
+	p{
+		font-size: 3em;
+	}
+
+	p + p{
+		margin-top: 10px;
+	}
+
+	.socials{
+		margin-top: 20px;
+	}
+}

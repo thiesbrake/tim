@@ -73,7 +73,7 @@ a#top{
 .site-header{
 	position: relative;
 	z-index: 1000;
-	padding: 0px 0px;
+	padding: 0px 10px;
 	background: none;
 }
 
@@ -126,6 +126,7 @@ a#top{
 			a{
 				border-top: 4px solid $lightgreen;
 				color: $lightgreen;
+				font-weight: 700;
 
 				&:hover{
 					border-top: 4px solid $lightgreen;
@@ -141,13 +142,94 @@ a#top{
     $VISUALS
 \*------------------------------------*/
 
+// 0. Basis 					==============================
+
 .section-visual{
 	position: relative;
 	z-index: 500;
 	width: 100%;
 	height: auto;
-	background: $headerbg;
+	max-height: 670px;
 	margin-top: -70px;
+}
+
+.start-visual{
+	background: $startbg;
+}
+
+.bio-visual{
+	background: $biobg;
+}
+
+.kontakt-visual{
+	position: relative;
+	z-index: 500;
+	width: 100%;
+	height: auto;
+	height: 200px;
+	margin-top: -70px;
+	background: $brown;
+}
+
+// 1. Image 					==============================
+
+.visual{
+	width: 100%;
+	float: none;
+	height: auto;
+	overflow: hidden;
+
+	img{
+		width: 100%;
+		max-width: 1256px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+.img-wrapper{
+	width: 1256px;
+	margin: 0 auto;
+}
+
+// 2. Overlay 					==============================
+
+.left-content-wrapper{
+	height: auto;
+	overflow: hidden;
+}
+
+.left-content{
+	top: 150px;
+	padding-left: 10px;
+	z-index: 9999;
+	position: absolute;
+	width: 520px;
+	height: 400px;
+
+	p{
+		color: $white;
+		font-weight: 300;
+		font-size: 4.250em;
+		line-height: 1.029em;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	p + p{
+		margin-top: 30px;
+	}
+
+	a{
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.social{
+		text-align: left;
+		margin-top: 30px;
+	}
 }
 
 
@@ -202,7 +284,7 @@ a#top{
 	width: 80px;
 	height: 40px;
 	margin: 0 auto;
-	background: $white url(../img/note.png) center center no-repeat;
+	background: $white url(../img/plec.png) center center no-repeat;
 }
 
 .colophon .hr{
@@ -303,6 +385,30 @@ a#top{
 	
 .contact-info{
 
+	a{
+		
+
+		&:nth-child(4){
+			
+		}
+	}
+	a.twitter{
+		vertical-align: bottom;
+		display: inline-block;
+		margin-right: 35px;
+	    background: url('../img/social-sprite.png') no-repeat 0 -3px;
+		width: 29px;
+		height: 29px;
+	}
+	a.facebook{
+		vertical-align: bottom;
+		display: inline-block;
+		margin-right: 35px;
+	    background: url('../img/social-sprite.png') no-repeat -30px 0;
+		width: 29px;
+		height: 29px;
+	}
+
 	span + span{
 		margin-left: 20px;
 	}
@@ -335,67 +441,11 @@ a#responsive-menu-button{
 	position: relative;
 	float:right;
     text-indent: -9999px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
     width: 32px;
     height: 32px;
     background: url(../img/menu.png) center center no-repeat;
-}
-
-
-/*------------------------------------*\
-    $HEADER VISUAL
-\*------------------------------------*/
-
-.left-content-wrapper{
-	height: auto;
-	overflow: hidden;
-}
-
-.left-content{
-	top: 150px;
-	z-index: 9999;
-	position: absolute;
-	width: 50%;
-	height: 400px;
-
-	p{
-		color: $white;
-		font-weight: 300;
-		font-size: 4.250em;
-		line-height: 1.029em;
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-
-	p + p{
-		margin-top: 30px;
-	}
-
-	a{
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 24px;
-	}
-
-	.social{
-		text-align: left;
-		margin-top: 30px;
-	}
-}
-
-.visual{
-	width: 100%;
-	float: right;
-	height: auto;
-	overflow: hidden;
-
-	img{
-		width: 100%;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
 }
 
 
@@ -413,9 +463,14 @@ a#responsive-menu-button{
 	}
 }
 
+.content-text{
+	padding: 0px 9%;
+	text-align: justify;
+}
 
 
 
 
-
-
+.content-area img {
+	width: auto;
+}

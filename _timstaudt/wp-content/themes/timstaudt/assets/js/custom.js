@@ -7,4 +7,9 @@ jQuery(document).ready(function ($) {
 
 	// $('.visual').first().fitText(1.2, { minFontSize: '20px', maxFontSize: '68px' });
 
+	var altText = $('.img-wrapper').find('img').attr('alt');
+
+	// Initialise "Label-Float" on any keypress
+	$(this).find('#section-visual').css("background-color", "altText");
+
 });
